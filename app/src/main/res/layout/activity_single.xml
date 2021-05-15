@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SingleActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:background="#212f53"
+        tools:context=".SingleActivity">
+
+        <Button
+            android:id="@+id/backBtn"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:backgroundTint="#212f53"
+            android:fontFamily="@font/nrnr"
+            android:text="뒤로가기"
+            android:textSize="30dp"
+            tools:layout_editor_absoluteX="7dp"
+            tools:layout_editor_absoluteY="19dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:fontFamily="@font/nrnr"
+            android:text="타이머"
+            android:textColor="#ffffff"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:background="@drawable/border"
+                android:layout_margin="10dp" >
+                <TextView
+                    android:id="@+id/randomTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="대화상자 제시어"
+                    android:textColor="#212f53"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/nrnr"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:background="@drawable/border2"
+                android:layout_margin="10dp" >
+                <TextView
+                    android:id="@+id/viewMsg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="따라친 대화상자 제시어"
+                    android:textSize="20sp"
+                    android:textColor="#212f53"
+                    android:fontFamily="@font/nrnr"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        tools:context=".SingleActivity">
+
+        <EditText
+            android:id="@+id/editTxtChat"
+            android:layout_width="322dp"
+            android:layout_height="wrap_content"
+            android:ems="13"
+            android:textColor="#212f53"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="139dp"
+            tools:layout_editor_absoluteY="338dp">
+        </EditText>
+
+        <Button
+            android:id="@+id/sendBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:backgroundTint="#212f53"
+            android:fontFamily="@font/nrnr"
+            android:text="입력"
+            tools:layout_editor_absoluteX="7dp"
+            tools:layout_editor_absoluteY="19dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
