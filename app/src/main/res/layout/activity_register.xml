@@ -25,6 +25,7 @@
             android:textSize="30sp"
             android:layout_gravity="left"
             android:backgroundTint="#212f53"
+            android:textColor="#ffffff"
             android:fontFamily="@font/nrnr"
             tools:layout_editor_absoluteX="332dp"
             tools:layout_editor_absoluteY="322dp" />
