@@ -47,6 +47,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:ems="13"
+                android:textSize="25sp"
                 android:fontFamily="@font/nrnr"
                 android:inputType="textPersonName"
                 android:textColor="#9f212f53" />
@@ -78,6 +79,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:ems="13"
+                android:textSize="25sp"
                 android:fontFamily="@font/nrnr"
                 android:inputType="textPassword"
                 android:textColor="#212f53" />
