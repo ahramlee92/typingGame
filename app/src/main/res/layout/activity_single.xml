@@ -117,7 +117,7 @@
             android:id="@+id/sendBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="25sp"
+            android:textSize="20sp"
             android:backgroundTint="#212f53"
             android:textColor="#ffffff"
             android:fontFamily="@font/nrnr"
