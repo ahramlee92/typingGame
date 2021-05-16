@@ -24,6 +24,7 @@
             android:layout_width="110dp"
             android:layout_height="wrap_content"
             android:backgroundTint="#212f53"
+            android:textColor="#ffffff"
             android:fontFamily="@font/nrnr"
             android:text="뒤로가기"
             android:textSize="30dp"
@@ -66,6 +67,7 @@
             android:text="혼자연습"
             android:textSize="25sp"
             android:backgroundTint="#212f53"
+            android:textColor="#ffffff"
             android:fontFamily="@font/nrnr"/>
 
         <Button
@@ -77,6 +79,7 @@
             android:text="단체연습"
             android:textSize="25sp"
             android:backgroundTint="#212f53"
+            android:textColor="#ffffff"
             android:fontFamily="@font/nrnr"/>
 
         <Button
@@ -88,6 +91,7 @@
             android:text="My page"
             android:textSize="25sp"
             android:backgroundTint="#212f53"
+            android:textColor="#ffffff"
             android:fontFamily="@font/nrnr"/>
 
     </LinearLayout>
