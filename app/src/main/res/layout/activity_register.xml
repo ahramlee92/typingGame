@@ -182,6 +182,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:backgroundTint="#212f53"
+                android:textColor="#ffffff"
                 android:fontFamily="@font/nrnr"
                 android:text="회원가입"
                 android:textSize="30sp"
