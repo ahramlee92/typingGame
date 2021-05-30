@@ -4,144 +4,200 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
     tools:context=".MakingRoomActivity">
 
-    <LinearLayout
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:gravity="center"
-        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingTop="210dp"
+            android:paddingBottom="100dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:gravity="left"
+                android:orientation="horizontal"
+                android:layout_width="300dp"
+                android:layout_height="70dp"
+                tools:context=".RegisterActivity">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="방제"
+                    android:textSize="30sp"
+                    android:layout_gravity="center"
+                    android:textColor="#212f53"
+                    android:fontFamily="@font/nrnr"
+                    tools:layout_editor_absoluteX="58dp"
+                    tools:layout_editor_absoluteY="161dp" />
+
+                <EditText
+                    android:id="@+id/editText_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="13"
+                    android:textSize="25sp"
+                    android:inputType="textPersonName"
+                    android:layout_gravity="center"
+                    android:textColor="#212f53"
+                    android:fontFamily="@font/nrnr"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="left"
+                android:orientation="horizontal"
+                android:layout_width="300dp"
+                android:layout_height="70dp"
+                tools:context=".RegisterActivity">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="모드"
+                    android:textSize="30sp"
+                    android:layout_gravity="center"
+                    android:textColor="#212f53"
+                    android:fontFamily="@font/nrnr"
+                    tools:layout_editor_absoluteX="58dp"
+                    tools:layout_editor_absoluteY="161dp" />
+
+                <EditText
+                    android:id="@+id/editText_nickName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="13"
+                    android:inputType="textPersonName"
+                    android:layout_gravity="center"
+                    android:textColor="#212f53"
+                    android:textSize="25sp"
+                    android:fontFamily="@font/nrnr"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="left"
+                android:orientation="horizontal"
+                android:layout_width="300dp"
+                android:layout_height="70dp"
+                tools:context=".RegisterActivity">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="인원"
+                    android:textSize="30sp"
+                    android:layout_gravity="center"
+                    android:textColor="#212f53"
+                    android:fontFamily="@font/nrnr"
+                    tools:layout_editor_absoluteX="58dp"
+                    tools:layout_editor_absoluteY="161dp" />
+
+                <EditText
+                    android:id="@+id/editText_passWord"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="13"
+                    android:inputType="textPassword"
+                    android:layout_gravity="center"
+                    android:textColor="#212f53"
+                    android:textSize="25sp"
+                    android:fontFamily="@font/nrnr"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="left"
+                android:orientation="horizontal"
+                android:layout_width="300dp"
+                android:layout_height="70dp"
+                tools:context=".RegisterActivity">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="시간"
+                    android:textSize="30sp"
+                    android:layout_gravity="center"
+                    android:textColor="#212f53"
+                    android:fontFamily="@font/nrnr"
+                    tools:layout_editor_absoluteX="58dp"
+                    tools:layout_editor_absoluteY="161dp" />
+
+
+                <EditText
+                    android:id="@+id/editTxt_cfmPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="13"
+                    android:inputType="textPassword"
+                    android:layout_gravity="center"
+                    android:textColor="#212f53"
+                    android:textSize="25sp"
+                    android:fontFamily="@font/nrnr"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:context=".RegisterActivity">
+        android:orientation="horizontal"
+        android:background="#212f53"
+        >
 
-        <LinearLayout
-            android:gravity="left"
-            android:orientation="horizontal"
-            android:layout_width="300dp"
-            android:layout_height="70dp"
-            tools:context=".RegisterActivity">
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:text="혼자연습"
+            android:textSize="25sp"
+            android:backgroundTint="#212f53"
+            android:textColor="#ffffff"
+            android:fontFamily="@font/nrnr"/>
 
-            <TextView
-                android:id="@+id/textView6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="방제"
-                android:textSize="30sp"
-                android:layout_gravity="center"
-                android:textColor="#212f53"
-                android:fontFamily="@font/nrnr"
-                tools:layout_editor_absoluteX="58dp"
-                tools:layout_editor_absoluteY="161dp" />
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:text="단체연습"
+            android:textSize="25sp"
+            android:backgroundTint="#212f53"
+            android:textColor="#ffffff"
+            android:fontFamily="@font/nrnr"/>
 
-            <EditText
-                android:id="@+id/editText_email"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:ems="13"
-                android:textSize="25sp"
-                android:inputType="textPersonName"
-                android:layout_gravity="center"
-                android:textColor="#212f53"
-                android:fontFamily="@font/nrnr"/>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:gravity="left"
-            android:orientation="horizontal"
-            android:layout_width="300dp"
-            android:layout_height="70dp"
-            tools:context=".RegisterActivity">
-
-            <TextView
-                android:id="@+id/textView3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="모드"
-                android:textSize="30sp"
-                android:layout_gravity="center"
-                android:textColor="#212f53"
-                android:fontFamily="@font/nrnr"
-                tools:layout_editor_absoluteX="58dp"
-                tools:layout_editor_absoluteY="161dp" />
-
-            <EditText
-                android:id="@+id/editText_nickName"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:ems="13"
-                android:inputType="textPersonName"
-                android:layout_gravity="center"
-                android:textColor="#212f53"
-                android:textSize="25sp"
-                android:fontFamily="@font/nrnr"/>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:gravity="left"
-            android:orientation="horizontal"
-            android:layout_width="300dp"
-            android:layout_height="70dp"
-            tools:context=".RegisterActivity">
-
-            <TextView
-                android:id="@+id/textView4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="인원"
-                android:textSize="30sp"
-                android:layout_gravity="center"
-                android:textColor="#212f53"
-                android:fontFamily="@font/nrnr"
-                tools:layout_editor_absoluteX="58dp"
-                tools:layout_editor_absoluteY="161dp" />
-
-            <EditText
-                android:id="@+id/editText_passWord"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:ems="13"
-                android:inputType="textPassword"
-                android:layout_gravity="center"
-                android:textColor="#212f53"
-                android:textSize="25sp"
-                android:fontFamily="@font/nrnr"/>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:gravity="left"
-            android:orientation="horizontal"
-            android:layout_width="300dp"
-            android:layout_height="70dp"
-            tools:context=".RegisterActivity">
-
-            <TextView
-                android:id="@+id/textView5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="시간"
-                android:textSize="30sp"
-                android:layout_gravity="center"
-                android:textColor="#212f53"
-                android:fontFamily="@font/nrnr"
-                tools:layout_editor_absoluteX="58dp"
-                tools:layout_editor_absoluteY="161dp" />
-
-
-            <EditText
-                android:id="@+id/editTxt_cfmPassword"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:ems="13"
-                android:inputType="textPassword"
-                android:layout_gravity="center"
-                android:textColor="#212f53"
-                android:textSize="25sp"
-                android:fontFamily="@font/nrnr"/>
-
-        </LinearLayout>
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:text="My page"
+            android:textSize="25sp"
+            android:backgroundTint="#212f53"
+            android:textColor="#ffffff"
+            android:fontFamily="@font/nrnr"/>
 
     </LinearLayout>
+</LinearLayout>
 
 </LinearLayout>
